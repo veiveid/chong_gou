@@ -16,4 +16,14 @@ public class Test {
         return (_numberOfLateDeliveries > 5) ? 2 : 1;
     }
 
+
+    /**将所有对该变量的引用动作，替换为对他赋值的那个表达式自身 tag2
+    double basePrice = anOrder.basePrice();
+    return (basePrice > 1000);
+    */
+
+    //tag2代码可以修改为：
+    return anOrder.basePrice() > 1000;
+
+
 }
